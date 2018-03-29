@@ -62,7 +62,12 @@ test('the data is peanut butter', done => {
     done();
   }
 
-  fetchData(callback);
+  fetch('https://jsonplaceholder.typicode.com/users')
+  .then((response)=>response.json());
+
+
+
+  // fetchData(callback);
 });
 
 // test('compiling android goes as expected', () => {
